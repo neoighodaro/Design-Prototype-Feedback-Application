@@ -19,3 +19,20 @@ For this to work, you need to have
 - A Pusher application. Create one on [pusher.com](https://pusher.com).
 
 The code is available on the [Pusher](https://blog.pusher.com/author/neo) blog.
+
+### Installation
+* Download or clone the repository.
+* Copy the `.env.example` file to `.env`.
+* In your `.env` file
+    * Change the `DB_CONNECTION=sqlite`
+    * Remove all other `DB_*` keys.
+    * Change `BROADCAST_DRIVER=pusher`.
+    * Update the `PUSHER_APP_*` keys with the values from the Pusher dashboard.
+    * Add `PUSHER_APP_CLUSTER="CLUSTER"` where `CLUSTER` is the Pusher application cluster.
+* Run `php artisan key:generate` to generate the key for the env file.
+* Run `touch databases/database.sqlite` to create the SQLite database file.
+* Run `php artisan migate` to migrate the databases.
+* Update the `resources/assets/js/bootstrap.js` file with the Pusher key.
+* Run `npm install` to install the dependencies.
+* Run `npm run dev` to run the NPM script.
+* Run `php artisan serve`.
