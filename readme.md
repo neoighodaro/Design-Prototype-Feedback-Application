@@ -18,7 +18,7 @@ For this to work, you need to have
 - [NPM](https://docs.npmjs.com/cli/install) and NodeJS installed locally.
 - A Pusher application. Create one on [pusher.com](https://pusher.com).
 
-The code is available on the [Pusher](https://blog.pusher.com/author/neo) blog.
+[View tutorial](https://pusher.com/tutorials/design-feedback-vuejs)
 
 ### Installation
 * Download or clone the repository.
